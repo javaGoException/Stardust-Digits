@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
+/*Importing 'Lato' Font*/
+
+/*Idea for aligning items: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container
+https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow*/
+#logo {
+	position: absolute;
+	cursor: pointer;
+	top: 1%;
+	left: 1%;
+	width: 70px;
+	height: 70px;
+	margin-right: 20px;
+}
+
+#name {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+#main {
+	display: block;
+	margin-top: 3%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	max-width: 1200px;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	text-align: center;
+}
+
+.logo_name {
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 20px;
+	margin: 0px;
+}
+
+.info {
+	text-align: center;
+}
+
+html {
+	height: 100%;
+}
+
+/*Background picture was made by me, following this tutorial: https://www.youtube.com/watch?v=_TIGIxHp9b8 */
+body {
+	height: 100%;
+	margin: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	background-image: url("stardust_background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	backdrop-filter: blur(1px);
+}
+
+footer {
+	margin: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	padding-bottom: 2px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+p {
+	font-family: 'Lato';
+	font-size: 20px;
+	font-weight: 100;
+	margin-top: 20px;
+	margin-bottom: 2px;
+	color: white;
+}
+
+#copyright {
+	cursor: pointer;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.2s;
+}
+
+#copyright:hover {
+	border-bottom: 1px solid #FFFFFF;
+}
+
+h1 {
+	font-family: 'Lato';
+	font-size: 40px;
+	font-weight: 400;
+	color: rgb(255, 255, 255);
+	margin: auto;
+}
+
+.inputfield {
+	font-family: 'Lato';
+	font-size: 15px;
+	background-color: rgb(249, 249, 249, 1);
+	margin: 5px;
+	width: 190px;
+	height: 35px;
+	border-radius: 6px;
+	border: none;
+	transition: 0.1s;
+}
+
+#input_field {
+	text-align: center;
+}
+
+#result_field {
+	text-align: center;
+}
+
+.inputfield:hover,
+.inputfield:focus {
+	height: 35px;
+	width: 210px;
+}
+
+::placeholder {
+	text-align: center;
+	font-style: italic;
+}
+
+button {
+	font-family: 'Lato';
+	background-color: #86e642;
+	font-size: 20px;
+	padding: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin: 20px;
+	border-radius: 10px;
+	outline-style: solid;
+	outline-offset: -2px;
+	outline-width: 2px;
+	cursor: pointer;
+	box-shadow: 0 14px #48722a;
+	transition: 0.1s;
+}
+
+button:hover {
+	background-color: #b2ff7b;
+}
+
+button:active {
+	box-shadow: 0 7px #48722a;
+	transform: translateY(8px);
+}

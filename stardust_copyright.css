@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
+/*Importing 'Lato' Font*/
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	background-image: url("stardust_background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	backdrop-filter: blur(1px);
+}
+
+footer {
+	margin: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	padding-bottom: 2px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+p {
+	font-family: 'Lato';
+	font-size: 20px;
+	font-weight: 100;
+	margin: auto;
+	color: white;
+}
+
+#text_header {
+	text-align: center;
+	font-size: 22px;
+	padding-bottom: 30px;
+	font-weight: bold;
+}
+
+.text {
+	padding-bottom: 20px;
+}
+
+.copyright {
+	cursor: pointer;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.2s;
+}
+
+.copyright:hover {
+	border-bottom: 1px solid #FFFFFF;
+}
+
+#logo {
+	position: absolute;
+	cursor: pointer;
+	top: 1%;
+	left: 1%;
+	width: 70px;
+	height: 70px;
+	margin-right: 20px;
+}
+
+#name {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+h1 {
+	font-family: 'Lato';
+	font-size: 40px;
+	font-weight: 400;
+	color: rgb(255, 255, 255);
+	margin: auto;
+}
+
+.logo_name {
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 20px;
+	margin: 0px;
+}
+
+.copyright_text {
+	max-width: 1500px;
+	max-height: 1500px;
+	padding: 5px;
+	margin-top: 2%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 4px;
+}
+
+#back {
+	max-width: 285px;
+	max-height: 400px;
+}
+
+button {
+	text-align: center;
+	font-family: 'Lato';
+	background-color: #86e642;
+	font-size: 20px;
+	padding: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	border-radius: 10px;
+	outline-style: solid;
+	outline-offset: -2px;
+	outline-width: 2px;
+	cursor: pointer;
+	box-shadow: 0 14px #48722a;
+	transition: 0.1s;
+}
+
+button:hover {
+	background-color: #b2ff7b;
+}
+
+button:active {
+	box-shadow: 0 7px #48722a;
+	transform: translateY(8px);
+}

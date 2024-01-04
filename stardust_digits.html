@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+	<link rel="icon" type="image/png" sizes="64x64" href="./logo_stardust_digits.png">
+	<title>Stardust Digits</title>
+	<link rel="stylesheet" href="stardust_digits.css">
+</head>
+
+<body>
+	<div class="logo_name">
+		<img id="logo" width="128" height="128" alt="stardust logo" src="./logo_stardust_digits.png"
+			onclick="location.href='stardust_digits.html'">
+		<h1 id="name">Stardust Digits</h1>
+	</div>
+	<div id="main">
+		<!--Idea for dropdown menu: https://www.w3schools.com/html/html_form_elements.asp-->
+		<div class="inputs_div">
+			<div>
+				<p>Convert from:</p>
+				<select class="inputfield" id="convert_from">
+					<option value="Decimal">Decimal</option>
+					<option value="Binary">Binary</option>
+					<option value="Hex">Hexadecimal</option>
+					<option value="Octal">Octal</option>
+				</select>
+			</div>
+			<div>
+				<p>Convert to:</p>
+				<select class="inputfield" id="convert_to">
+					<option value="Decimal" id="toDecimal">Decimal</option>
+					<option value="Binary" id="toBinary">Binary</option>
+					<option value="Hex" id="toHex">Hexadecimal</option>
+					<option value="Octal" id="toOctal">Octal</option>
+				</select>
+			</div>
+			<div>
+				<p>Enter the value:</p>
+				<input type="text" id="input_field" class="inputfield" placeholder="Input Field">
+			</div>
+			<div>
+				<p>Result:</p>
+				<input type="text" id="result_field" class="inputfield" placeholder="Result Field" readonly>
+			</div>
+			<button type="button" id="calculate_button">Calculate!</button>
+		</div>
+		<div class="info">
+			<p>Welcome to Stardust Digits! This tool will help you convert numbers between hexadecimal, octal, binary,
+				and
+				decimal number systems. Hexadecimal is a 16-based number system, it uses the digits 0-9 and the letters
+				A-F. Octal is a 8-based number system, it uses digits 0-7. Binary is a 2-based number system(numbers 0
+				and 1). Decimal is the most common number system. It
+				uses symbols from 0 to 9.</p>
+		</div>
+	</div>
+	<footer>
+		<p id="copyright" onclick="location.href='stardust_copyright.html'">Copyright and Legal Notice</p>
+	</footer>
+	<script src="stardust_digits.js"></script>
+</body>
+
+</html>
